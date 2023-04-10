@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="Empleos,CV,trabajo" />
+    <meta name="author" content="Gino Paoletti Geuna" />
+    <meta name="copyright" content="Agencia de Empleos temporarios" />
+    <title>Agencia de empleos temporarios</title>
+  </head>
+  <body>
+    <header>
+      <h1>Agencia de empleos temporarios</h1>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#inicio">Inicio</a>
+          </li>
+          <li>
+            <a href="#cv">Enviar Curriculum Vitae</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+          <li>
+            <a href="#acerca de">Acerca de nosotros</a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="https://cdn.pixabay.com/photo/2017/08/03/08/31/hiring-2575036_1280.jpg"
+        alt="banner"
+      />
+    </header>
+    <div>
+      <h1 id="#inicio">
+        Bienvenido al sitio oficial de la Agencia de Empleos Temporarios
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem possimus
+        incidunt quam qui repellendus nulla aspernatur eius necessitatibus
+        repudiandae suscipit, saepe voluptatum blanditiis accusantium expedita
+        laudantium vel quis ratione quod. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Iusto incidunt facilis dolorem harum
+        similique, quibusdam dolores laudantium. Aut labore vel velit quo
+        voluptas, doloremque consectetur pariatur mollitia, repellendus beatae
+        nostrum.
+      </p>
+    </div>
+    <hr />
+    <div>
+      <h1 id="cv">
+        ¿Buscás empleo? Envíanos tu CV y buscaremos el trabajo que mejor se
+        adapte a tu perfil!
+      </h1>
+      <form name="form-cv">
+        <!-- method: POST action: URL a script-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" /> <br />
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" /> <br />
+        <label for="disponibilidad">Disponibilidad horaria:</label><br />
+        <input type="checkbox" name="disponibilidad" value="M" />Mañana<br />
+        <input type="checkbox" name="disponibilidad" value="T" />Tarde<br />
+        <input type="checkbox" name="disponibilidad" value="N" />Noche<br />
+        <label for="sueldo">Sueldo pretendido:</label>
+        <input
+          type="number"
+          id="sueldo"
+          placeholder="Ingrese un número"
+        /><br />
+        <label for="puesto">Puesto:</label><br />
+        <input type="checkbox" name="puesto" value="VTAS" />Ventas<br />
+        <input type="checkbox" name="puesto" value="ADM" />Administración<br />
+        <input type="checkbox" name="puesto" value="RRHH" />Recursos Humanos<br />
+        <input type="checkbox" name="puesto" value="IT" />IT<br />
+        <input type="checkbox" name="puesto" value="SD" />Servicios
+        domésticos<br />
+        <input type="checkbox" name="puesto" value="SAL" />Salud<br />
+        <input type="checkbox" name="puesto" value="HUM" />Humanidades<br />
+        <input type="checkbox" name="puesto" value="EDU" />Educación<br />
+        <label for="EstadoCivil">Estado civil:</label>
+        <select name="EstadoCivil">
+          <option value="C">Casado</option>
+          <option value="S" selected>Soltero</option>
+          <option value="V">Viudo</option>
+          <option value="D">Divorciado/Separado</option>
+        </select>
+        <br />
+        <label>Cantidad de hijos:</label><br />
+        <label>Menores de 12 años:</label>
+        <input type="number" placeholder="Ingrese un número" /> <br />
+        <label>Entre 12 y 21 años:</label>
+        <input type="number" placeholder="Ingrese un número" /> <br />
+        <label>Mayores de 21 años:</label>
+        <input type="number" placeholder="Ingrese un número" /> <br />
+        <label for="pasaport">¿Poseé pasaporte?</label>
+        <input type="radio" name="pasaport" value="Si" />Si
+        <input type="radio" name="pasaport" value="No" />No <br />
+        <label for="inputDNI">DNI:</label>
+        <input
+          type="number"
+          name="inputDNI"
+          placeholder="DNI sin puntos (.)"
+        /><br />
+        <label for="pdf">Importar CV</label>
+        <input type="file" accept="application/pdf" name="pdf" /><br />
+        <input type="submit" value="Aceptar" form_id="form-cv" />
+      </form>
+    </div>
+    <hr>
+    <div>
+        <h2 id="contacto">Contacto</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iusto quas corrupti ipsam, quidem quia rem ipsum ipsa dolore similique placeat. Architecto qui dolor perferendis voluptas necessitatibus porro sapiente cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, consequuntur nam quia quisquam totam laboriosam quod! Minus provident ad doloribus veniam, dolorem dignissimos odio vel ducimus eveniet corrupti doloremque voluptas.</p>
+        <h3>¿Dónde nos encontrás?</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.020422608417!2d-66.34180818551489!3d-33.29212869678885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4394eec782487%3A0x2bcfdfba83514ad4!2sUniversidad%20Nacional%20de%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1681138186336!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <hr>
+    <div>
+        <h2 id="acerca de">Acerca de nosotros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellat molestiae voluptate ipsam, quod possimus. Quae voluptatum, facere ut ratione ad asperiores consequuntur fugiat explicabo nesciunt impedit, error consequatur. Fugit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit nemo dicta culpa. Debitis sunt voluptas ex eum quam, minus quidem inventore nisi error aliquid iure exercitationem officia quae! Architecto! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro consectetur ratione cumque velit atque voluptatem voluptatibus corrupti blanditiis? Sit deleniti voluptatum debitis iure nesciunt esse nihil iusto dolores modi? Et!</p>
+
+    </div>
+  </body>
+</html>
