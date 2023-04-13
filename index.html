@@ -9,6 +9,11 @@
     <meta name="author" content="Gino Paoletti Geuna" />
     <meta name="copyright" content="Agencia de Empleos temporarios" />
     <title>Agencia de empleos temporarios</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/estilos.css" />
   </head>
   <body>
     <header>
@@ -30,15 +35,12 @@
           </li>
         </ul>
       </nav>
-      <img
-        src="https://cdn.pixabay.com/photo/2017/08/03/08/31/hiring-2575036_1280.jpg"
-        alt="banner"
-      />
+
     </header>
-    <div>
-      <h1 id="#inicio">
+    <div class="section">
+      <h2 id="#inicio">
         Bienvenido al sitio oficial de la Agencia de Empleos Temporarios
-      </h1>
+      </h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem possimus
         incidunt quam qui repellendus nulla aspernatur eius necessitatibus
@@ -51,17 +53,29 @@
       </p>
     </div>
     <hr />
-    <div>
-      <h1 id="cv">
+    <div class="div-form">
+      <h3 id="cv">
         ¿Buscás empleo? Envíanos tu CV y buscaremos el trabajo que mejor se
         adapte a tu perfil!
-      </h1>
+      </h3>
       <form name="form-cv">
         <!-- method: POST action: URL a script-->
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" /> <br />
+        <input
+          type="text"
+          name="nombre"
+          class="inputs"
+          placeholder="Ingrese su nombre"
+        />
+        <br />
         <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" /> <br />
+        <input
+          type="text"
+          name="apellido"
+          class="inputs"
+          placeholder="Ingrese su apellido"
+        />
+        <br />
         <label for="disponibilidad">Disponibilidad horaria:</label><br />
         <input type="checkbox" name="disponibilidad" value="M" />Mañana<br />
         <input type="checkbox" name="disponibilidad" value="T" />Tarde<br />
@@ -71,6 +85,7 @@
           type="number"
           id="sueldo"
           placeholder="Ingrese un número"
+          class="inputs"
         /><br />
         <label for="puesto">Puesto:</label><br />
         <input type="checkbox" name="puesto" value="VTAS" />Ventas<br />
@@ -83,7 +98,7 @@
         <input type="checkbox" name="puesto" value="HUM" />Humanidades<br />
         <input type="checkbox" name="puesto" value="EDU" />Educación<br />
         <label for="EstadoCivil">Estado civil:</label>
-        <select name="EstadoCivil">
+        <select class="inputs" name="EstadoCivil">
           <option value="C">Casado</option>
           <option value="S" selected>Soltero</option>
           <option value="V">Viudo</option>
@@ -92,11 +107,14 @@
         <br />
         <label>Cantidad de hijos:</label><br />
         <label>Menores de 12 años:</label>
-        <input type="number" placeholder="Ingrese un número" /> <br />
+        <input type="number" placeholder="Ingrese un número" class="inputs" />
+        <br />
         <label>Entre 12 y 21 años:</label>
-        <input type="number" placeholder="Ingrese un número" /> <br />
+        <input type="number" placeholder="Ingrese un número" class="inputs" />
+        <br />
         <label>Mayores de 21 años:</label>
-        <input type="number" placeholder="Ingrese un número" /> <br />
+        <input type="number" placeholder="Ingrese un número" class="inputs" />
+        <br />
         <label for="pasaport">¿Poseé pasaporte?</label>
         <input type="radio" name="pasaport" value="Si" />Si
         <input type="radio" name="pasaport" value="No" />No <br />
@@ -105,31 +123,67 @@
           type="number"
           name="inputDNI"
           placeholder="DNI sin puntos (.)"
+          class="inputs"
         /><br />
         <label for="pdf">Importar CV</label>
         <input type="file" accept="application/pdf" name="pdf" /><br />
-        <input type="submit" value="Aceptar" form_id="form-cv" />
+        <div class="b-submit">
+          <input type="submit" value="Aceptar" form_id="form-cv" />
+        </div>
       </form>
-    <hr>
     </div>
-    <div>
-        <h2 id="contacto">Contacto</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iusto quas corrupti ipsam, quidem quia rem ipsum ipsa dolore similique placeat. Architecto qui dolor perferendis voluptas necessitatibus porro sapiente cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, consequuntur nam quia quisquam totam laboriosam quod! Minus provident ad doloribus veniam, dolorem dignissimos odio vel ducimus eveniet corrupti doloremque voluptas.</p>
-        <h3>¿Dónde nos encontrás?</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.020422608417!2d-66.34180818551489!3d-33.29212869678885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4394eec782487%3A0x2bcfdfba83514ad4!2sUniversidad%20Nacional%20de%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1681138186336!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <hr>
+    <hr />
+    <div class="section">
+      <h2 id="contacto">Contacto</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iusto quas
+        corrupti ipsam, quidem quia rem ipsum ipsa dolore similique placeat.
+        Architecto qui dolor perferendis voluptas necessitatibus porro sapiente
+        cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Maxime, consequuntur nam quia quisquam totam laboriosam quod! Minus
+        provident ad doloribus veniam, dolorem dignissimos odio vel ducimus
+        eveniet corrupti doloremque voluptas.
+      </p>
+      <h3>¿Dónde nos encontrás?</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.020422608417!2d-66.34180818551489!3d-33.29212869678885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4394eec782487%3A0x2bcfdfba83514ad4!2sUniversidad%20Nacional%20de%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1681138186336!5m2!1ses-419!2sar"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <hr />
     </div>
-    <div>
-        <h2 id="acerca de">Acerca de nosotros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellat molestiae voluptate ipsam, quod possimus. Quae voluptatum, facere ut ratione ad asperiores consequuntur fugiat explicabo nesciunt impedit, error consequatur. Fugit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit nemo dicta culpa. Debitis sunt voluptas ex eum quam, minus quidem inventore nisi error aliquid iure exercitationem officia quae! Architecto! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro consectetur ratione cumque velit atque voluptatem voluptatibus corrupti blanditiis? Sit deleniti voluptatum debitis iure nesciunt esse nihil iusto dolores modi? Et!</p>
-        <hr>
-  </div>
-  <footer>
-    <p>Todos los derechos reservados</p>
-    <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-    </ul>
-</footer>
+    <div class="section">
+      <h2 id="acerca de">Acerca de nosotros</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        repellat molestiae voluptate ipsam, quod possimus. Quae voluptatum,
+        facere ut ratione ad asperiores consequuntur fugiat explicabo nesciunt
+        impedit, error consequatur. Fugit?Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Recusandae impedit nemo dicta culpa.
+        Debitis sunt voluptas ex eum quam, minus quidem inventore nisi error
+        aliquid iure exercitationem officia quae! Architecto! Lorem ipsum dolor
+        sit, amet consectetur adipisicing elit. Porro consectetur ratione cumque
+        velit atque voluptatem voluptatibus corrupti blanditiis? Sit deleniti
+        voluptatum debitis iure nesciunt esse nihil iusto dolores modi? Et!
+      </p>
+      <hr />
+    </div>
+    <footer>
+      <div class="foo-contenido">
+        <h3>Todos los derechos reservados</h3>
+        <ul class="foo-redes">
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="foo-debajo">
+        <p>&copy Copyright 2023 - Agencia de Empleos Temporarios</p>
+      </div>
+    </footer>
   </body>
 </html>

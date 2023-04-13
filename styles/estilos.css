@@ -1,0 +1,92 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.div-form{
+    width: 400px;
+    padding: 10px;
+    margin: auto;   /*centrar div */ 
+}
+
+.div-form h3{
+    margin-bottom: 2rem;
+}
+.div-form label{
+    font-size: 16px;
+    margin-bottom: auto;
+    
+}
+.inputs{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.b-submit{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.b-submit input{
+    background: rgb(144, 91, 243);
+    border: none;
+    padding: 12px;
+    color: rgb(218, 211, 211);
+    border-radius: 30px;
+}
+.b-submit input:hover{
+    background:rgb(105, 33, 237); ;
+    cursor: pointer;
+}
+.section{
+    text-align: center;
+}
+/*--FOOTER--*/
+footer{
+    background-color:#111 ;
+    width: 100%;
+    color: aliceblue;
+    padding-top: 20px;
+    width: 100%;
+}
+.foo-contenido{ /*flexbox*/
+    display: flex;
+    align-items: center; /*vertical */
+    justify-content: center; /*horizontal */
+    flex-direction: column;
+    text-align: center;
+
+}
+.foo-contenido h3{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.foo-redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0;
+}
+.foo-redes li{
+  padding: 0 10px; /*primero vertical el 2do horizontal */
+}
+.foo-redes a{
+    text-decoration: none;
+    color: #fff;
+}
+.foo-debajo{
+    background-color: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.foo-debajo p{
+    font-size: 14px;
+}
+.foo-redes a:hover{
+    color:rgb(105, 33, 237); ;
+
+}
